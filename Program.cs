@@ -6,7 +6,8 @@ namespace pattern_facade
     {
         static void Main(string[] args)
         {
-            
+           var notificationService = new NotificationService();
+           notificationService.Send("hello", "target");           
         }
     }
 }
